@@ -6,7 +6,12 @@ from datetime import datetime
 import os
 from PIL import Image
 
-model = joblib.load("model.pkl")
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+
+model = joblib.load(MODEL_PATH)
 
 st.set_page_config(
     page_title="AI Student Performance Predictor",

@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 import os
 from PIL import Image
-
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -56,25 +55,6 @@ Model Accuracy:
 
 Task:
 Binary Classification
-"""
-)
-
-st.sidebar.info(
-"""
-Algorithm:
-Decision Tree Classifier
-
-Training Dataset:
-500 Student Records
-
-Features Used:
-• Hours Studied
-• Attendance
-• Assignments
-• Previous Score
-
-Model Accuracy:
-90%
 """
 )
 st.sidebar.header("👤 Student Profile")
